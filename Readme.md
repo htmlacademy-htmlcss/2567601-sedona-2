@@ -2,7 +2,7 @@
 
 * Студент: [Луиза Хакиева](https://up.htmlacademy.ru/htmlcss-individual/2/user/2567601).
 * Наставник: [Дина Шарипова](https://htmlacademy.ru/profile/id1418957).
-* Сайт : [Седона](https://amenepistat.github.io/2567601-sedona-2/).
+* Сайт :[ссылка](https://amenepistat.github.io/2567601-sedona-2/).
 
 ---
 
