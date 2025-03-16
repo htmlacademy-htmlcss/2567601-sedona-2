@@ -106,16 +106,20 @@
                 </fieldset>
                 <fieldset class="filter-group filter-group-price">
                   <legend class="filter-group-title">Стоимость, ₽:</legend>
-                  <label class="control-interval">
-                    <input type="number" min="0" max="9000" name="min-interval" value="0">
-                    От
-                  </label>
-                  <label class="control-interval">
-                    <input type="number" min="0" max="9000" name="max-interval" value="9000">
-                    До
-                  </label>
-                  <label class="visually-hidden" for="control-range">Управление границей стоимости</label>
-                  <input class="control-range" id="control-range" type="range" min="0" max="9000">
+                  <div class="control-interval-container">
+                    <label class="control-interval">
+                      <input type="number" min="0" max="9000" name="min-interval" value="0">
+                      <span>От</span>
+                    </label>
+                    <label class="control-interval">
+                      <input type="number" min="0" max="9000" name="max-interval" value="9000">
+                      <span>До</span>
+                    </label>
+                  </div>
+                  <div class="control-range-container">
+                    <label class="visually-hidden" for="control-range">Управление границей стоимости</label>
+                    <input class="control-range" id="control-range" type="range" min="0" max="9000">
+                  </div>
                 </fieldset>
                 <div class="filter-buttons-container">
                   <button class="filter-submit filter-buttons" type="submit">Применить</button>
@@ -237,7 +241,8 @@
                 <a class="pagination-link" href="#">4</a>
               </li>
               <li class="pagination-item">
-                <span class="pagination-more">...</span>
+                <a class="pagination-link pagination-more" href="#">...</a>
+
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">10</a>
@@ -247,47 +252,48 @@
         </section>
         <section class="subscribe-catalog">
           <div class="content-container">
-          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
-            <div class="form-email-container">
-              <p class="form-email">
+            <div class="subscribe-container">
+              <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+              <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+              <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
                 <label class="visually-hidden" for="user-email">Email: </label>
-                <input type="email" placeholder="Вам email:" required id="user-email" name="user-name">
-              </p>
-              <button class="submit-button" type="submit">Подписаться</button>
+                <input class="subscribe-input" type="email" placeholder="Вам email:" required id="user-email"
+                  name="user-name">
+                <button class="submit-button" type="submit">Подписаться</button>
+              </form>
             </div>
-          </form>
           </div>
         </section>
+    </div>
+    </section>
 
 
-      </main>
-      <footer class="page-footer">
-        <div class="page-footer-container content-container">
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="https://vk.com/htmlacademy" class="social-link">
-                <span class="visually-hidden">ВКонтакте</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="https://t.me/htmlacademy" class="social-link">
-                <span class="visually-hidden">Телеграмм</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="https://www.youtube.com/htmlacademy" class="social-link">
-                <span class="visually-hidden">Ютуб</span>
-              </a>
-            </li>
-          </ul>
-          <a href="tel:+78128121212" class="footer-tel">+7 (812) 812-12-12</a>
-          <a class="copyright" href="https://htmlacademy.ru/">
-            <img class="copyright-logo" src="#" alt="Логотип HTML Academy">
-          </a>
-        </div>
-      </footer>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer-container content-container">
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://vk.com/htmlacademy" class="social-link">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://t.me/htmlacademy" class="social-link">
+              <span class="visually-hidden">Телеграмм</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.youtube.com/htmlacademy" class="social-link">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+        <a href="tel:+78128121212" class="footer-tel">+7 (812) 812-12-12</a>
+        <a class="copyright" href="https://htmlacademy.ru/">
+          <img class="copyright-logo" src="#" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </footer>
     </div>
   </body>
 
