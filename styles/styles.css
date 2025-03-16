@@ -37,10 +37,16 @@ body {
 .page-container {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
 .main-container {
   flex-grow: 1;
+}
+
+.content-container {
+  margin: 0 auto;
+  width: 1060px;
 }
 
 .page-header,
@@ -54,22 +60,51 @@ body {
   display: flex;
 }
 
+.navigation-logo-img {
+  display: block;
+}
+
 .navigation-list {
   margin: 0;
   margin-right: auto;
   padding: 0;
   width: 450px;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-user {
   width: 150px;
-  margin-left: auto;
   list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-link {
+  padding: 20px 16px;
+}
+
+.navigation-user-link {
+  padding: 22px 12px;
+}
+
+.navigation-button {
+  padding: 8px 34px;
+  align-self: center;
+  border-radius: 4px;
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .navigation-link,
@@ -79,6 +114,7 @@ body {
   color: #000000;
   font-weight: 700;
   font-size: 20px;
+  display: block;
   line-height: 24px;
 }
 
@@ -123,6 +159,11 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.advantages-slogan-container .common {
+  margin-bottom: 25px;
 }
 
 .common + p {
@@ -130,14 +171,14 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin: 0;
 }
 
 .advantages-slogan-container {
-  min-height: 261px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 680px;
+  padding: 69px 0;
 }
 
 .advantages-list {
@@ -231,24 +272,33 @@ body {
 }
 
 .features-slogan-container {
-  min-height: 246px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 680px;
+  margin: auto;
+  padding: 64px 0;
+}
+
+.features-slogan-container .common {
+  margin-bottom: 20px;
 }
 
 .features-description {
   text-align: center;
-
 }
 
-.search {
+.search-text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 96px 304px;
+  padding: 96px 0;
+  width: 680px;
+  margin: auto;
+}
+
+.search-title {
+  margin-bottom: 20px;
 }
 
 .search-link {
@@ -260,6 +310,10 @@ body {
   background-color: #756157;
   text-align: center;
   font-family: inherit;
+  margin-top: 54px;
+  border: none;
+  padding: 8px 50px;
+  border-radius: 4px;
 }
 
 .subscribe {
@@ -267,11 +321,14 @@ body {
   background-image: url("../images/background-subscribe.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+}
+
+.subscribe-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 258px;
+  width: 680px;
+  padding: 96px 0 104px;
+  margin: auto;
 }
 
 .subscribe-title {
@@ -281,6 +338,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .subscribe-description {
@@ -288,6 +347,12 @@ body {
   line-height: 26px;
   text-align: center;
   color: #ffffff;
+  margin: 0;
+}
+
+.subscribe-form {
+  margin-top: 54px;
+  display: flex;
 }
 
 .submit-button {
@@ -300,22 +365,30 @@ body {
   background-color: #82B3D3;
   font-family: inherit;
   border: none;
+  padding: 8px 50px;
+  border-radius: 4px;
+  max-width: 232px;
 }
 
-.form-email-container {
-  display: flex;
-}
-
-.form-email input {
+.subscribe-input {
   font-family: inherit;
-  width: 452px;
+  width: 100%;
+  font-size: 18px;
+  padding: 0 20px;
 }
-
+.page-footer-container {
+  display: flex;
+  padding: 45px 0 35px;
+  justify-content: space-between;
+}
 .social-list {
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 200px;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-link {
@@ -323,9 +396,6 @@ body {
   text-decoration: none;
 }
 
-.page-footer-container {
-  display: flex;
-}
 
 .footer-tel {
   font-size: 40px;
@@ -334,8 +404,6 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .subscribe-catalog {
@@ -503,16 +571,6 @@ body {
   color: #333333;
 }
 
-.type-price-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.card-button-container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .favourites {
   font-family: inherit;
   font-weight: 700;
@@ -530,11 +588,6 @@ body {
 
 .unfavourite-button {
   background-color: #7DB54F;
-}
-
-.grading-container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .products-card-rating {

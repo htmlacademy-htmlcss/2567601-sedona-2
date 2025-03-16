@@ -10,9 +10,9 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <nav class="navigation">
+        <nav class="navigation content-container">
           <a href="#" class="navigation-logo">
-            <img class="navigation-logo-img" src="images/logo.svg" width="138" height="64" alt="Логотип Седона">
+            <img class="navigation-logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -50,7 +50,7 @@
         </section>
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
-          <div class="advantages-slogan-container">
+          <div class="advantages-slogan-container content-container">
             <p class="common">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
             <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
@@ -90,7 +90,7 @@
           </ul>
         </section>
         <section class="features">
-          <div class="features-slogan-container">
+          <div class="features-slogan-container content-container">
             <p class="common">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
             <p>Опытный персонал и качественное обслуживание!</p>
           </div>
@@ -110,29 +110,33 @@
           </ul>
         </section>
         <section class="search">
-          <h2 class="search-title common">Заинтересовались?</h2>
-          <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
-            гостиниц
-            в Седоне</p>
-          <button class="search-link" type="button">Поиск гостиницы в Седоне</button>
+          <div class="content-container">
+            <div class="search-text-container">
+            <h2 class="search-title common">Заинтересовались?</h2>
+            <p class="search-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
+              гостиниц
+              в Седоне</p>
+            <button class="search-link" type="button">Поиск гостиницы в Седоне</button>
+          </div>
+          </div>
         </section>
         <section class="subscribe">
-          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
-            <div class="form-email-container">
-              <p class="form-email">
+          <div class="content-container">
+            <div class="subscribe-container">
+            <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+            <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
                 <label class="visually-hidden" for="user-email">Email: </label>
-                <input type="email" placeholder="Вам email:" required id="user-email" name="user-name">
-              </p>
-              <button class="submit-button" type="submit">Подписаться</button>
-            </div>
-          </form>
+                <input class="subscribe-input" type="email" placeholder="Вам email:" required id="user-email" name="user-name">
+                <button class="submit-button" type="submit">Подписаться</button>
+            </form>
+          </div>
+          </div>
         </section>
 
       </main>
       <footer class="page-footer">
-        <div class="page-footer-container">
+        <div class="page-footer-container content-container">
           <ul class="social-list">
             <li class="social-item">
               <a href="https://vk.com/htmlacademy" class="social-link">
