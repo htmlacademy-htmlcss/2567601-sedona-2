@@ -118,6 +118,23 @@ body {
   line-height: 24px;
 }
 
+.navigation-user-item {
+  min-width: 44px;
+  min-height: 64px;
+}
+
+.favourite-count {
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  display: block;
+  min-width: 20px;
+  min-height: 20px;
+}
 
 .navigation-logo {
   display: block;
@@ -389,8 +406,14 @@ body {
   list-style: none;
   max-width: 200px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.social-item {
+  min-width: 47px;
+  min-height: 40px;
 }
 
 .social-link {
