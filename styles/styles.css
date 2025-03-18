@@ -649,10 +649,18 @@ body {
   margin-bottom: 16px;
 }
 
+.products-card-info {
+  display: flex;
+  margin: 0;
+  margin-bottom: 16px;
+  justify-content: space-between;
+}
+
 .products-card-type {
   color: #333333;
   margin: 0;
-  margin-bottom: 16px;
+  margin-right: 20px;
+  flex-grow: 1;
 }
 
 .products-card-price {
