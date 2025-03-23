@@ -330,7 +330,6 @@ body {
   align-items: center;
   justify-content: center;
   padding: 96px 0;
-  width: 680px;
   margin: auto;
 }
 
@@ -647,6 +646,7 @@ body {
   min-height: 438px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content 1fr auto;
   gap: 16px 20px;
 }
 
