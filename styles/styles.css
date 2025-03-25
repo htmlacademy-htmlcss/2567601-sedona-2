@@ -18,7 +18,15 @@ html {
   height: 100%;
 }
 
-* {
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -151,6 +159,9 @@ body {
   text-decoration: none;
   text-align: center;
   font-weight: 700;
+  border: none;
+  font-family: inherit;
+  border-radius: 4px;
 }
 
 .hero {
@@ -319,7 +330,6 @@ body {
   align-items: center;
   justify-content: center;
   padding: 96px 0;
-  width: 680px;
   margin: auto;
 }
 
@@ -634,11 +644,15 @@ body {
   border: 1px solid #E5E5E5;
   padding: 20px;
   min-height: 438px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content 1fr auto;
+  gap: 16px 20px;
 }
 
 .products-card-img {
   display: block;
-  margin-bottom: 16px;
+  grid-column: 1/-1;
 }
 
 .products-card-title {
@@ -646,57 +660,37 @@ body {
   font-size: 24px;
   line-height: 28px;
   margin: 0;
-  margin-bottom: 16px;
-}
-
-.products-card-info {
-  display: flex;
-  margin: 0;
-  margin-bottom: 16px;
-  justify-content: space-between;
+  grid-column: 1/-1;
 }
 
 .products-card-type {
   color: #333333;
   margin: 0;
-  margin-right: 20px;
-  flex-grow: 1;
 }
 
 .products-card-price {
   color: #333333;
   margin: 0;
+  justify-self: end;
 }
 
 .products-card-button-more {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-radius: 4px;
-}
-
-.favourites {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  border: 0;
+  padding-block: 8px;
+  display: block;
+  text-decoration: none;
+  align-self: center;
 }
 
 .favourite-button {
   background-color: #82B3D3;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-radius: 4px;
+  padding-block: 8px;
+  align-self: center;
 }
 
 .unfavourite-button {
   background-color: #7DB54F;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-radius: 4px;
+  padding-block: 8px;
+  align-self: center;
 }
 
 .products-card-rating {
@@ -707,6 +701,9 @@ body {
   color: #333333;
   background-color: #F2F2F2;
   margin: 0;
+  align-self: center;
+  padding-block:  8px;
+  border-radius: 4px;
 }
 
 .pagination-list {
