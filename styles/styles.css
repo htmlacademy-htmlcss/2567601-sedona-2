@@ -107,11 +107,11 @@ body {
 }
 
 .navigation-link:focus {
-  border: 3px solid #82B3D3;
+  opacity: 0.5;
 }
 
 .navigation-link:active {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .link-active::before {
@@ -132,23 +132,27 @@ body {
 
 .navigation-user-favourite {
   position: relative;
-  background: url("../images/icons/heart.svg") no-repeat 50% 50%;
+  background: url("../images/icons/heart.svg") no-repeat center;
 }
 
 .navigation-user-search {
-  background: url("../images/icons/search.svg") no-repeat 50% 50%;
+  background: url("../images/icons/search.svg") no-repeat center;
 }
 
 
 .navigation-user-search:hover,
 .navigation-user-favourite:hover {
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .navigation-user-search:focus,
 navigation-user-favourite:focus {
-  opacity: 0.5;
-  background-color: #756157;
+  opacity: 0.6;
+}
+
+.navigation-user-search:active,
+navigation-user-favourite:active {
+  opacity: 0.3;
 }
 
 .navigation-button {
@@ -167,9 +171,6 @@ navigation-user-favourite:focus {
   color: #FFFFFF4D;
 }
 
-.navigation-button:disabled {
-  background: #E5E5E5;
-}
 
 .visually-hidden {
   position: absolute;
@@ -220,7 +221,6 @@ navigation-user-favourite:focus {
   margin-right: 30px;
   width: 138px;
   margin-bottom: -6px;
-
 }
 
 .button {
@@ -465,7 +465,7 @@ navigation-user-favourite:focus {
   color: #FFFFFF4D;
 }
 
-.search-link::disabled {
+.search-link:disabled {
   background: #E5E5E5;
 }
 
@@ -632,6 +632,12 @@ navigation-user-favourite:focus {
   align-self: center;
 }
 
+.copyright-logo {
+  width: 115px;
+  height: 33px;
+  fill: #000000;
+}
+
 .copyright:hover .copyright-logo {
   fill: #756157;
 }
@@ -644,11 +650,6 @@ navigation-user-favourite:focus {
   fill: #7561574D;
 }
 
-.copyright-logo {
-  width: 115px;
-  height: 33px;
-  fill: #000000;
-}
 
 .background-container {
   background: #333333 url("../images/catalog-background.jpg")no-repeat;
@@ -986,10 +987,6 @@ navigation-user-favourite:focus {
   color: #FFFFFF4D;
 }
 
-.products-card-button-more:disabled {
-  background: #E5E5E5;
-}
-
 .favourite-button {
   background-color: #82B3D3;
   padding-block: 8px;
@@ -1036,6 +1033,24 @@ navigation-user-favourite:focus {
   background: #E5E5E5;
 }
 
+.products-card-stars {
+  height: 18px;
+  background: url("../images/icons/star.svg") space left center;
+  margin: auto 0;
+}
+
+.stars-four {
+  width: 87px;
+}
+
+.stars-three {
+  width: 57px;
+}
+
+.stars-two {
+  width: 39px;
+}
+
 .products-card-rating {
   font-size: 16px;
   line-height: 20px;
@@ -1073,32 +1088,14 @@ navigation-user-favourite:focus {
   border-radius: 4px;
 }
 
-.pagination-link:hover,
-.pagination-link:focus {
+.pagination-link:not(.pagination-more):not(.link-current):hover,
+.pagination-link:not(.pagination-more):not(.link-current):focus {
   background-color: #68A2CA;
 }
 
-.pagination-link:active {
+.pagination-link:not(.pagination-more):not(.link-current):active {
   background-color: #82B3D3;
   color: #FFFFFF4D;
-}
-
-.pagination-link:hover.pagination-more,
-.pagination-link:focus.pagination-more {
-  background-color: inherit;
-  color: #000000;
-}
-
-.link-current {
-  background-color: #F2F2F2;
-  color: #000000;
-  cursor: auto;
-}
-
-.pagination-link:hover.link-current,
-.pagination-link:focus.link-current {
-  background-color: #F2F2F2;
-  color: #000000;
 }
 
 .pagination-more {
@@ -1106,5 +1103,11 @@ navigation-user-favourite:focus {
   line-height: 26px;
   background-color: inherit;
   color: #000000;
-  cursor: auto;
+  cursor: default;
+}
+
+.link-current {
+  background-color: #F2F2F2;
+  color: #000000;
+  cursor: default;
 }
