@@ -844,12 +844,41 @@ navigation-user-favourite:focus {
 .view-products-button-item {
   width: 48px;
   min-height: 48px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .view-products-button-link {
-  color: #333333;
+  padding: 22px 22px;
+  color: #000000;
   text-decoration: none;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.view-products-button-link:hover {
+  border: 2px solid #000000;
+}
+
+.view-products-button-link:focus {
+  border: 2px solid #68A2CA;
+}
+
+.view-products-button-link:active {
+  border: 2px solid #000000;
+}
+
+.tile-view {
+  background: url("../images/icons/view-icon1.svg") no-repeat 50% 50%;
+}
+
+.card-view {
+  background: url("../images/icons/view-icon2.svg") no-repeat 50% 50%;
+}
+
+.list-view {
+  background: url("../images/icons/view-icon3.svg") no-repeat 50% 50%;
 }
 
 .products-list {
@@ -1006,7 +1035,30 @@ navigation-user-favourite:focus {
   border-radius: 4px;
 }
 
+.pagination-link:hover,
+.pagination-link:focus {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  background-color: #82B3D3;
+  color: #FFFFFF4D;
+}
+
+.pagination-link:hover.pagination-more,
+.pagination-link:focus.pagination-more {
+  background-color: inherit;
+  color: #000000;
+}
+
 .link-current {
+  background-color: #F2F2F2;
+  color: #000000;
+  cursor: auto;
+}
+
+.pagination-link:hover.link-current,
+.pagination-link:focus.link-current {
   background-color: #F2F2F2;
   color: #000000;
 }
@@ -1016,4 +1068,5 @@ navigation-user-favourite:focus {
   line-height: 26px;
   background-color: inherit;
   color: #000000;
+  cursor: auto;
 }
