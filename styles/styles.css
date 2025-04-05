@@ -764,7 +764,6 @@ navigation-user-favourite:active {
   padding: 0;
   border: 0;
   display: flex;
-
 }
 
 .filter-group-title {
@@ -772,12 +771,6 @@ navigation-user-favourite:active {
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 32px;
-}
-
-
-.control-interval-container {
-  display: flex;
-  margin-bottom: 36px;
 }
 
 .filter-group-price {
@@ -808,12 +801,160 @@ navigation-user-favourite:active {
 
 .control {
   line-height: 23px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.control-mark {
+  height: 20px;
+  width: 20px;
+  border: none;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.control-label {
+  margin-left: 36px;
+}
+
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  position: absolute;
+  background: #FFFFFF url("../images/icons/mark.svg") no-repeat center;
+  background-size: 13px 10px;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3f5e72;
+  left: 5px;
+  top: 5px;
+}
+
+.control-input:hover ~ .control-label,
+.control-input:hover + .control-mark {
+  opacity: 0.6;
+}
+
+.control-input:focus-visible + .control-mark,
+.control-input:focus + .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+.control-input:active ~ .control-label,
+.control-input:active + .control-mark {
+  opacity: 0.4;
+}
+
+.control-interval-container {
+  display: flex;
+  margin-bottom: 44px;
+  gap: 2px;
 }
 
 .control-interval {
+  display: flex;
+  background-color: #F2F2F2;
+  align-items: center;
+  width: 143px;
+  padding-right: 20px;
+}
+
+.control-interval input {
+  border: none;
+  width: 100%;
   line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+  background-color: transparent;
+  font-size: 18px;
+  border-radius: 4px 0 0 4px;
+  padding: 12px 0 12px 20px;
+  margin-right: 2px;
+}
+
+.control-interval:hover {
+  background-color: #E6E6E6;
+}
+
+.control-interval input {
+  outline: 0;
+  border: 0;
+}
+
+.control-interval:focus-within {
+  background-color: #e6e6e6;
+  outline: 3px solid #83B3D3;
+}
+
+.control-input-min {
+  border-radius: 4px 0 0 4px;
+}
+
+.control-input-max {
+  border-radius: 0 4px 4px 0;
+}
+
+.control-interval span {
   text-align: right;
   color: #000000;
+  opacity: 0.3;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  background-color: #FFFFFF;
+  height: 4px;
+}
+
+.range-scale-button {
+  height: 20px;
+  width: 20px;
+  border: none;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  position: absolute;
+  cursor: pointer;
+  top: -8px;
+}
+
+.range-scale-button:focus,
+.range-scale-button:focus-visible {
+  border: 3px solid #83B3D3;
+}
+
+.range-scale-button:active {
+  outline: 2px solid #83B3D3;
+}
+
+.min-button {
+  left: 0;
+}
+
+.max-button {
+  right: 0;
+}
+
+.control-interval input::-webkit-outer-spin-button,
+.control-interval input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .filter-buttons {
@@ -915,7 +1056,7 @@ navigation-user-favourite:active {
 }
 
 .select-control:disabled {
-  border: 2px solid #0000004D;
+  outline: 2px solid #0000004D;
   color: #0000004D;
 
 }
@@ -1144,7 +1285,8 @@ navigation-user-favourite:active {
 }
 
 .pagination-link:not(.pagination-more):not(.link-current):hover,
-.pagination-link:not(.pagination-more):not(.link-current):focus-visible {
+.pagination-link:not(.pagination-more):not(.link-current):focus-visible,
+.pagination-link:not(.pagination-more):not(.link-current):focus {
   background-color: #68A2CA;
 }
 
