@@ -956,6 +956,13 @@ navigation-user-favourite:active {
   appearance: none;
   margin: 0;
 }
+.control-interval input{
+  -moz-appearance: textfield;
+}
+.control-interval input:hover,
+.control-interval input:focus {
+  -moz-appearance: number-input;
+}
 
 .filter-buttons {
   font-family: inherit;
