@@ -262,6 +262,7 @@ navigation-user-favourite:active {
 .hero-img {
   display: block;
   margin: 0 auto;
+  margin-bottom: 32px;
 }
 
 .common {
@@ -289,7 +290,7 @@ navigation-user-favourite:active {
   display: flex;
   flex-direction: column;
   width: 680px;
-  padding: 69px 0;
+  padding: 69px 0 90px;
 }
 
 .advantages-list {
@@ -408,17 +409,17 @@ navigation-user-favourite:active {
 
 .icon-house::before {
   background: url("../images/icons/house-icon.svg") no-repeat center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .icon-food::before {
   background: url("../images/icons/burger-icon.svg") no-repeat center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .icon-gift::before {
   background: url("../images/icons/gift-icon.svg") no-repeat center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .features-title {
