@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 2% and last 1 version
+*/
+
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -100,7 +107,9 @@ body {
 }
 
 .navigation-link:hover {
+  -webkit-text-decoration-color: #82B3D3;
   text-decoration-color: #82B3D3;
+  -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 23px;
@@ -956,16 +965,19 @@ navigation-user-favourite:active {
 
 .control-interval input::-webkit-outer-spin-button,
 .control-interval input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
 
 .control-interval input {
+  -webkit-appearance: textfield;
   appearance: textfield;
 }
 
 .control-interval input:hover,
 .control-interval input:focus {
+  -webkit-appearance: number-input;
   appearance: number-input;
 }
 
@@ -1054,6 +1066,7 @@ navigation-user-favourite:active {
   width: 292px;
   margin-right: 70px;
   min-height: 48px;
+  -webkit-appearance: none;
   appearance: none;
   padding: 12px 20px;
   border-radius: 4px;
@@ -1485,11 +1498,13 @@ navigation-user-favourite:active {
 
 .count-input::-webkit-outer-spin-button,
 .count-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
 
 .count-input {
+  -webkit-appearance: textfield;
   appearance: textfield;
   border: none;
   width: 31px;
@@ -1503,6 +1518,7 @@ navigation-user-favourite:active {
 
 .count-input:hover,
 .count-input:focus {
+  -webkit-appearance: textfield;
   appearance: textfield;
 }
 
