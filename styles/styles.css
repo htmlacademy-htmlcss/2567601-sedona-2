@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: > 2% and last 1 version
-*/
-
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -973,12 +966,6 @@ navigation-user-favourite:active {
 .control-interval input {
   -webkit-appearance: textfield;
   appearance: textfield;
-}
-
-.control-interval input:hover,
-.control-interval input:focus {
-  -webkit-appearance: number-input;
-  appearance: number-input;
 }
 
 .filter-buttons {
