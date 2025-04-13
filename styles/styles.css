@@ -76,7 +76,7 @@ body {
   margin: 0;
   margin-right: auto;
   padding: 0;
-  width: 450px;
+  width: 550px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -1080,6 +1080,7 @@ navigation-user-favourite:active {
   list-style: none;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -1168,6 +1169,7 @@ navigation-user-favourite:active {
 .products-card-type {
   color: #333333;
   margin: 0;
+  overflow: hidden;
 }
 
 .products-card-price {
