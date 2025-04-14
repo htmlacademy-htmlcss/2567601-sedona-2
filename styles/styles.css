@@ -1468,7 +1468,7 @@ navigation-user-favourite:active {
   border-radius: 0 4px 4px 0;
 }
 
-.count-number:hover > svg > path {
+.count-number:hover  .count-path {
   fill: #000000;
   fill-opacity: 1;
 }
