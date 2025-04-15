@@ -10,7 +10,7 @@
 
   <body>
     <div class="page-container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation content-container">
           <a href="index.html" class="navigation-logo">
             <img class="navigation-logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
@@ -42,7 +42,7 @@
           <a class="navigation-button button" href="#"> Хочу сюда!</a>
         </nav>
       </header>
-      <main class="main-inner main-container">
+      <main class="main-inner main-container" data-test="main">
         <div class="background-container">
           <div class="content-container">
             <h1 class="inner-title">Гостиницы Седоны</h1>
@@ -56,7 +56,7 @@
                 <a class="breadcrumbs-link">Гостиницы</a>
               </li>
             </ol>
-            <section class="filters">
+            <section class="filters" data-test="filter">
               <h2 class="visually-hidden">Фильтры гостиниц</h2>
               <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="filter-group">
@@ -147,7 +147,7 @@
           </div>
         </div>
 
-        <section class="catalog-products">
+        <section class="catalog-products" data-test="catalog">
           <div class="content-container">
             <div class="catalog-products-container">
               <h2 class="catalog-products-title">Найдено гостиниц:
@@ -262,7 +262,7 @@
             </ul>
           </div>
         </section>
-        <section class="subscribe-catalog">
+        <section class="subscribe-catalog" data-test="subscribe">
           <div class="content-container subscribe-container">
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
             <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
@@ -275,7 +275,7 @@
           </div>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <div class="page-footer-container content-container">
           <ul class="social-list">
             <li class="social-item">
