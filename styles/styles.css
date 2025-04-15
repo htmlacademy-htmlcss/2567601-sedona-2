@@ -155,6 +155,7 @@ navigation-user-favourite:active {
   padding: 8px 34px;
   align-self: center;
   border-radius: 4px;
+  min-width: 160px;
 }
 
 .navigation-button:hover,
@@ -300,7 +301,7 @@ navigation-user-favourite:active {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -381,7 +382,7 @@ navigation-user-favourite:active {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -447,7 +448,7 @@ navigation-user-favourite:active {
   margin-bottom: 20px;
 }
 
-.features-description {
+.features-descripfootertion {
   text-align: center;
   margin: 0;
   width: 230px;
@@ -596,14 +597,14 @@ navigation-user-favourite:active {
 .page-footer-container {
   display: flex;
   padding: 45px 0 35px;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .social-list {
   margin: 0;
   padding: 0;
   list-style: none;
-  max-width: 200px;
+  max-width: 150px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -647,6 +648,10 @@ navigation-user-favourite:active {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 340px;
+  margin-inline: auto;
 }
 
 .footer-tel:hover {
@@ -1468,7 +1473,7 @@ navigation-user-favourite:active {
   border-radius: 0 4px 4px 0;
 }
 
-.count-number:hover  .count-path {
+.count-number:hover .count-path {
   fill: #000000;
   fill-opacity: 1;
 }
