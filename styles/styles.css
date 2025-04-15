@@ -76,7 +76,7 @@ body {
   margin: 0;
   margin-right: auto;
   padding: 0;
-  width: 450px;
+  width: 550px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -100,7 +100,9 @@ body {
 }
 
 .navigation-link:hover {
+  -webkit-text-decoration-color: #82B3D3;
   text-decoration-color: #82B3D3;
+  -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 23px;
@@ -262,6 +264,7 @@ navigation-user-favourite:active {
 .hero-img {
   display: block;
   margin: 0 auto;
+  margin-bottom: 32px;
 }
 
 .common {
@@ -289,7 +292,7 @@ navigation-user-favourite:active {
   display: flex;
   flex-direction: column;
   width: 680px;
-  padding: 69px 0;
+  padding: 69px 0 90px;
 }
 
 .advantages-list {
@@ -364,7 +367,7 @@ navigation-user-favourite:active {
 .advantages-description {
   text-align: center;
   margin: 0;
-  width: 231px;
+  width: 232px;
   margin-top: 30px;
 }
 
@@ -408,17 +411,17 @@ navigation-user-favourite:active {
 
 .icon-house::before {
   background: url("../images/icons/house-icon.svg") no-repeat center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .icon-food::before {
   background: url("../images/icons/burger-icon.svg") no-repeat center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .icon-gift::before {
   background: url("../images/icons/gift-icon.svg") no-repeat center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .features-title {
@@ -696,6 +699,7 @@ navigation-user-favourite:active {
   color: #ffffff;
   padding-top: 35px;
   min-height: 412px;
+  padding-bottom: 35px;
 }
 
 .inner-title {
@@ -785,7 +789,6 @@ navigation-user-favourite:active {
   flex-wrap: wrap;
   margin-top: 56px;
   flex-direction: column;
-  justify-content: flex-end;
   gap: 32px;
 }
 
@@ -882,6 +885,7 @@ navigation-user-favourite:active {
   border-radius: 4px 0 0 4px;
   padding: 12px 0 12px 20px;
   margin-right: 2px;
+  font-family: inherit;
 }
 
 .control-interval:hover {
@@ -937,7 +941,7 @@ navigation-user-favourite:active {
 
 .range-scale-button:focus,
 .range-scale-button:focus-visible {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .range-scale-button:active {
@@ -954,17 +958,14 @@ navigation-user-favourite:active {
 
 .control-interval input::-webkit-outer-spin-button,
 .control-interval input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
 
 .control-interval input {
+  -webkit-appearance: textfield;
   appearance: textfield;
-}
-
-.control-interval input:hover,
-.control-interval input:focus {
-  appearance: number-input;
 }
 
 .filter-buttons {
@@ -1006,6 +1007,7 @@ navigation-user-favourite:active {
   background-color: transparent;
   border: none;
   padding: 8px 57px;
+  border-radius: 4px;
 }
 
 .filter-reset:hover {
@@ -1013,7 +1015,7 @@ navigation-user-favourite:active {
 }
 
 .filter-reset:focus-visible {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .filter-reset:active {
@@ -1041,7 +1043,6 @@ navigation-user-favourite:active {
   text-transform: uppercase;
   margin: 0;
   margin-right: auto;
-
 }
 
 .select-control {
@@ -1052,8 +1053,9 @@ navigation-user-favourite:active {
   width: 292px;
   margin-right: 70px;
   min-height: 48px;
+  -webkit-appearance: none;
   appearance: none;
-  padding: 14px 20px;
+  padding: 12px 20px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
   background: transparent url("../images/icons/select-arrow.svg") no-repeat right 20px center;
@@ -1078,6 +1080,7 @@ navigation-user-favourite:active {
   list-style: none;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -1166,6 +1169,7 @@ navigation-user-favourite:active {
 .products-card-type {
   color: #333333;
   margin: 0;
+  overflow: hidden;
 }
 
 .products-card-price {
@@ -1337,12 +1341,12 @@ navigation-user-favourite:active {
   margin: auto;
   padding: 64px 70px;
   position: relative;
-  width: 717px;
+  max-width: 717px;
   min-height: 576px;
 }
 
 .modal-close-button {
-  background: #E2E2E2 url("../images/icons/close.svg") no-repeat center;
+  background: #F2F2F2 url("../images/icons/close.svg") no-repeat center;
   border-radius: 50%;
   cursor: pointer;
   width: 52px;
@@ -1352,6 +1356,7 @@ navigation-user-favourite:active {
   position: absolute;
   top: 64px;
   right: 52px;
+  margin-left: 10px;
 }
 
 .modal-close-button:hover {
@@ -1377,7 +1382,7 @@ navigation-user-favourite:active {
 .modal-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 88px;
+  column-gap: 81px;
   row-gap: 23px;
 }
 
@@ -1411,7 +1416,7 @@ navigation-user-favourite:active {
   font-weight: 700;
   line-height: 24px;
   border: none;
-  padding: 12px 20px;
+  padding: 12px 50px 12px 20px;
   width: 100%;
   border-radius: 4px;
   background: #F2F2F2 url("../images/icons/date-icon.svg") no-repeat right 20px center;
@@ -1463,7 +1468,7 @@ navigation-user-favourite:active {
   border-radius: 0 4px 4px 0;
 }
 
-.count-number:hover > svg > path {
+.count-number:hover  .count-path {
   fill: #000000;
   fill-opacity: 1;
 }
@@ -1480,11 +1485,13 @@ navigation-user-favourite:active {
 
 .count-input::-webkit-outer-spin-button,
 .count-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
 
 .count-input {
+  -webkit-appearance: textfield;
   appearance: textfield;
   border: none;
   width: 31px;
@@ -1498,6 +1505,7 @@ navigation-user-favourite:active {
 
 .count-input:hover,
 .count-input:focus {
+  -webkit-appearance: textfield;
   appearance: textfield;
 }
 
@@ -1511,10 +1519,12 @@ navigation-user-favourite:active {
 
 .modal-button {
   background-color: #83B3D3;
-  padding: 18px 215px;
+  padding-block: 18px;
   border-radius: 10px;
   grid-column: 1/-1;
   margin-top: 25px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .modal-button:hover,
@@ -1538,7 +1548,7 @@ navigation-user-favourite:active {
 .tooltip-toggle {
   border: none;
   background: url("../images/icons/tooptip.svg") no-repeat center;
-  padding: 10px;
+  padding: 13px;
   border-radius: 50%;
   margin: 0;
   display: block;
@@ -1547,7 +1557,8 @@ navigation-user-favourite:active {
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text,
 .tooltip-toggle:focus-visible + .tooltip-text {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .tooltip-toggle:hover,
@@ -1562,7 +1573,6 @@ navigation-user-favourite:active {
 
 .tooltip {
   position: absolute;
-  margin-top: 3px;
   margin-left: 10px;
   width: 26px;
   height: 26px;
@@ -1579,8 +1589,9 @@ navigation-user-favourite:active {
   color: #ffffff;
   font-weight: 400;
   width: 256px;
+  min-height: 143px;
   margin-top: 15px;
-  margin-left: -118px;
+  margin-left: -108px;
   display: none;
 }
 
@@ -1591,8 +1602,8 @@ navigation-user-favourite:active {
   width: 19px;
   height: 9px;
   left: 0;
-  right: 6px;
-  top: 100%;
+  right: 0;
+  top: 32px;
   margin-left: auto;
   margin-right: auto;
   border: none;

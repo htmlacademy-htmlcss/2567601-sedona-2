@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head>
 
   <body>
@@ -16,7 +17,7 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link link-active" href="#">Главная</a>
+              <a class="navigation-link link-active" aria-current="page" href="#">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
@@ -92,7 +93,7 @@
         </section>
         <section class="features">
           <div class="features-slogan-container content-container">
-            <p class="common">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+            <p class="common">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</p>
             <p>Опытный персонал и качественное обслуживание!</p>
           </div>
           <ul class="features-list">
@@ -126,7 +127,7 @@
             <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
               <label class="visually-hidden" for="user-email">Email: </label>
-              <input class="subscribe-input" type="email" placeholder="Вам email:" required id="user-email"
+              <input class="subscribe-input" type="email" placeholder="Ваш e-mail" required id="user-email"
                 name="user-name">
               <button class="submit-button" type="submit">Подписаться</button>
             </form>
@@ -140,7 +141,7 @@
             <li class="social-item">
               <a href="https://vk.com/htmlacademy" class="social-link">
                 <svg class="social-svg" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                  width="24" height="14" viewBox="0 0 25 15">
+                  width="25" height="15" viewBox="0 0 25 15">
                   <path fill-rule="evenodd"
                     d="M24.1 1.8c.2-.5 0-1-.8-1h-2.6c-.7 0-1 .4-1.1.8 0 0-1.4 3.2-3.3 5.3-.6.6-.9.8-1.2.8-.2 0-.4-.2-.4-.8V1.8c0-.7-.2-1-.8-1h-4c-.5 0-.8.4-.8.6 0 .7 1 .8 1 2.6v3.8c0 .8 0 1-.4 1-.9 0-3-3.3-4.3-7-.3-.7-.5-1-1.2-1H1.6c-.8 0-1 .4-1 .8 0 .7 1 4 4.2 8.5C7 13.2 10 15 12.8 15c1.7 0 1.9-.4 1.9-1v-2.4c0-.7.2-.8.7-.8.4 0 1 .1 2.6 1.6 1.8 1.8 2 2.6 3 2.6h2.7c.7 0 1.1-.4 1-1.1-.3-.8-1.2-1.8-2.3-3-.6-.8-1.5-1.5-1.8-2-.4-.4-.3-.6 0-1 0 0 3.2-4.5 3.5-6Z"
                     clip-rule="evenodd" />
@@ -150,7 +151,7 @@
             </li>
             <li class="social-item">
               <a href="https://t.me/htmlacademy" class="social-link">
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="15"
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="17"
                   viewBox="0 0 18 17">
                   <path
                     d="M16.8 1 .8 7c-1 .4-1 1-.2 1.3l4.1 1.3 9.5-6c.5-.3.9-.1.5.2l-7.6 7-.3 4.1c.4 0 .6-.2.8-.4l2-2 4.1 3.1c.8.5 1.3.3 1.5-.7L18 2.2c.3-1-.4-1.6-1.1-1.2Z" />
@@ -160,7 +161,7 @@
             </li>
             <li class="social-item">
               <a href="https://www.youtube.com/htmlacademy" class="social-link">
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="22" height="17"
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="18"
                   viewBox="0 0 23 18">
                   <path
                     d="M19 .4H3.4C1.6.4.3 2 .3 3.8v10c0 2 1.3 3.6 3.2 3.6h15.7c1.6 0 3.1-1.6 3.1-3.4V3.8C22.1 2 20.8.4 19 .4ZM8 12.9v-8l7.3 4-7.3 4Z" />
@@ -178,7 +179,7 @@
               </g>
               <defs>
                 <clipPath id="a">
-                  <path " d=" M0 .4h115v33H0z" />
+                  <path d=" M0 .4h115v33H0z" />
                 </clipPath>
               </defs>
             </svg>
@@ -195,7 +196,7 @@
           <h2 class="modal-search-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="modal-label-container date-container">
-              <label class="modal-label" for="date-arrival">Дата заезда:</label>
+              <label class="modal-label" for="date-arrival">Дата Заезда:</label>
               <div class="alert-input-container">
                 <input id="date-arrival" type="text" name="date-arrival" placeholder="Укажите дату"
                   value="27 апреля 2020">
@@ -203,7 +204,7 @@
               </div>
             </div>
             <div class="modal-label-container date-container">
-              <label class="modal-label" for="date-departure">Дата заезда:</label>
+              <label class="modal-label" for="date-departure">Дата Выезда:</label>
               <div class="alert-input-container">
                 <input id="date-departure" type="text" name="date-departure" placeholder="Укажите дату"
                   value="1 сентября 2023">
@@ -217,14 +218,14 @@
                     количество
                     взрослых</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                    <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
+                    <path class="count-path" fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
                   </svg></button>
                 <input id="adult" type="number" value="2" name="adult-count" class="count-input">
                 <button class="count-more count-number" type="button"><span class="visually-hidden">Увеличить
                     количество
                     взрослых</span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
                     viewBox="0 0 20 20">
-                    <path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                    <path class="count-path" fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                   </svg>
                 </button>
               </div>
@@ -243,14 +244,14 @@
                     количество
                     детей</span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
                     viewBox="0 0 20 20">
-                    <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
+                    <path class="count-path" fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
                   </svg></button>
                 <input id="kid" type="number" value="2" name="kid-count" class="count-input">
                 <button class="count-more count-number" type="button"><span class="visually-hidden">Увеличить
                     количество
                     детей</span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
                     viewBox="0 0 20 20">
-                    <path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                    <path class="count-path" fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                   </svg>
                 </button>
               </div>
@@ -259,7 +260,6 @@
           </form>
         </section>
       </div>
-    </div>
     </div>
     <script>
       let buttonClose = document.querySelector(".modal-close-button");
